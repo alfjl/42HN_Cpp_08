@@ -17,7 +17,7 @@ Develop a 'Span' class, able to store up to 'N' integers. Write an 'addNumber()'
 (learn how to look into STL containers and search for specific functionalities)
 
 ex02:  
-The std::stack is one of the few containers, which are NOT iterable. Thus implement a 'MutantStack', which has all of the std::stack's features, but with the added bonus of iterators.
+The std::stack is one of the few containers, which are NOT iterable. Thus implement a 'MutantStack', which has all of the std::stack's features, but with the added bonus of iterators.  
 (deeper look into containers and iterators)
 
 ## Learnings
