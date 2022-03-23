@@ -113,6 +113,36 @@ int main()
 	}
 
 	std::cout << "\n ##### TEST ITERATOR & 15000 NUMBERS ##### " << std::endl;
+	Span				sp8 = Span(15000);
+	std::vector<int>	testVector;
+
+	for (int i = 0; i < 15000; i++)
+		testVector.push_back(i);
 	
+	try
+	{
+		sp8.addNumber(testVector.begin(), testVector.end());
+		std::cout << sp8.shortestSpan() << std::endl;
+		std::cout << sp8.longestSpan() << std::endl;
+	}
+	catch(std::exception &e)
+	{
+		std::cout << e.what() << std::endl;	
+	}
+
+	std::cout << "\n ##### EXCEPTION: TEST ITERATOR & 15000 NUMBERS ##### " << std::endl;
+	Span				sp9 = Span(12000);
+	
+	try
+	{
+		sp9.addNumber(testVector.begin(), testVector.end());
+		std::cout << sp9.shortestSpan() << std::endl;
+		std::cout << sp9.longestSpan() << std::endl;
+	}
+	catch(std::exception &e)
+	{
+		std::cout << e.what() << std::endl;	
+	}
+
 	return 0;
 }

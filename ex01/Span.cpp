@@ -35,11 +35,16 @@ void	Span::addNumber(int number)
 	this->_internalVector.push_back(number);
 	this->_currentSize++;
 }
+void	Span::addNumber( std::vector<int>::iterator begin, std::vector<int>::iterator end)
+{
+	std::vector<int>::iterator	it = begin;
 
-//void	Span::addRangeOfNumbers(unsigned int how_many_numbers, int range_from, int range_to)
-//{
-	//
-//}
+	while (it != end)
+	{
+		addNumber(*it);
+		it++;
+	}
+}
 
 long long	Span::shortestSpan( void )
 {
