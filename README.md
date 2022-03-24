@@ -27,4 +27,4 @@ Very nice intro to the STL, and a great incentive to look deeper into the implem
 ### Resources
 
 * [cplusplus.com](http://www.cplusplus.com/)
-
+* [Iterators](https://www.simplilearn.com/tutorials/cpp-tutorial/iterators-in-cpp)
